@@ -1,0 +1,252 @@
+:root {
+    scroll-behavior: unset;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+/* home */
+
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9999999999;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.sk-cube-grid {
+    width: 40px;
+    height: 40px;
+    margin: 100px auto;
+}
+
+.sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #D62E33;
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+
+.sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    }
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    }
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    }
+}
+
+.head {
+    background-image: url(../img/events-heavenly-header.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(214, 46, 51, 0.6);
+}
+
+.content {
+    z-index: 1;
+}
+
+.content h1 {
+    font-size: 4rem;
+}
+
+.boxContainer {
+    z-index: 10;
+}
+
+.box {
+    background-color: rgb(44, 44, 44);
+}
+
+.box a {
+    display: block;
+    width: 200px;
+    text-decoration: none;
+    color: white;
+    -webkit-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;
+}
+
+.box a:hover {
+    color: rgba(214, 46, 51, 0.4);
+}
+
+.times {
+    left: 80%;
+    cursor: pointer;
+}
+
+.icon {
+    cursor: pointer;
+    color: rgb(44, 44, 44);
+    -webkit-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;
+}
+
+.icon:hover {
+    color: rgb(83, 83, 83);
+}
+
+/* details */
+
+.singer {
+    background-color: rgba(214, 46, 51, 0.6);
+    color: white;
+    cursor: pointer;
+    -webkit-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;
+}
+
+.singer:hover {
+    color: rgb(233, 233, 233);
+}
+
+.singerInfo {
+    background-color: rgb(233, 233, 233);
+    display: none;
+}
+
+/* duration */
+
+#duration {
+    background-image: url(../img/invitation-2508607__2.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: white;
+}
+
+#duration .col-lg-3 {
+    z-index: 1;
+}
+
+.item {
+    border: solid 1px white;
+}
+
+.mainBackgroundColor {
+    background-color: #D62E33 !important;
+}
+
+.mainColor {
+    color: #D62E33;
+}
+
+.icons a {
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    border: solid 1px #6c757d;
+    -webkit-transition: color .5s, background-color .5s, border-color .5s;
+    -o-transition: color .5s, background-color .5s, border-color .5s;
+    transition: color .5s, background-color .5s, border-color .5s;
+}
+
+.icons a:hover {
+    color: white !important;
+    background-color: #D62E33;
+    border-color: #D62E33;
+}
+
+.form-control:focus {
+    border-color: #D62E33;
+    -webkit-box-shadow: 0 0 0 0.25rem rgb(240 14 22 / 25%);
+            box-shadow: 0 0 0 0.25rem rgb(240 14 22 / 25%);
+}
+
+textarea{
+    resize: none;
+}
