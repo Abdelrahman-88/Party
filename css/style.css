@@ -191,6 +191,13 @@ body {
     display: none;
 }
 
+@media screen and (max-width:768px){
+    .singers{
+        width: 100% !important;
+    }
+}
+
+
 /* duration */
 
 #duration {
